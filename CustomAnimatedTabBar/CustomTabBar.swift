@@ -32,8 +32,11 @@ struct CustomTabBar: View {
                             .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
                             .foregroundColor(selectedTab == tab ? .red : .gray)
                             .font(.system(size: 22))
-                            .onTapGesture(.easeIn(duration: 0.1)) {
-                                selectedTab = tab
+                            .onTapGesture {
+                                withAnimation(.easeIn(duration:
+                                                        0.1)) {
+                                    selectedTab = tab
+                                }
                             }
                         Spacer()
                     }
