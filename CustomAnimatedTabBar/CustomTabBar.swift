@@ -23,13 +23,17 @@ struct CustomTabBar: View {
     
     var body: some View {
         VStack {
-            HStack {
-                
+            if #available(iOS 15.0, *) {
+                HStack {
+                    
+                }
+                .frame(width: nil, height: 60)
+                .background(.thinMaterial)
+                .cornerRadius(10)
+                .padding()
+            } else {
+                // Fallback on earlier versions
             }
-            .frame(width: nil, height: 60)
-            .background(.thinMaterial)
-            .cornerRadius(10)
-            .padding()
         }
     }
 }
