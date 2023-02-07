@@ -11,6 +11,7 @@
 		09D799AA2992B484002B4100 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D799A92992B484002B4100 /* ContentView.swift */; };
 		09D799AC2992B488002B4100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D799AB2992B488002B4100 /* Assets.xcassets */; };
 		09D799AF2992B488002B4100 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D799AE2992B488002B4100 /* Preview Assets.xcassets */; };
+		09D799B62992B4E8002B4100 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D799B52992B4E8002B4100 /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		09D799A92992B484002B4100 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09D799AB2992B488002B4100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D799AE2992B488002B4100 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09D799B52992B4E8002B4100 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				09D799A72992B484002B4100 /* CustomAnimatedTabBarApp.swift */,
 				09D799A92992B484002B4100 /* ContentView.swift */,
+				09D799B52992B4E8002B4100 /* CustomTabBar.swift */,
 				09D799AB2992B488002B4100 /* Assets.xcassets */,
 				09D799AD2992B488002B4100 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D799AA2992B484002B4100 /* ContentView.swift in Sources */,
+				09D799B62992B4E8002B4100 /* CustomTabBar.swift in Sources */,
 				09D799A82992B484002B4100 /* CustomAnimatedTabBarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
