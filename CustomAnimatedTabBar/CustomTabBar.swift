@@ -21,6 +21,25 @@ struct CustomTabBar: View {
         selectedTab.rawValue + ".fill"
     }
     
+    private var tabColor: Color {
+        switch selectedTab {
+        case .house:
+            return .blue
+        case .message:
+            return .pink
+        case .person:
+            if #available(iOS 15.0, *) {
+                return .indigo
+            } else {
+                return .gray
+            }
+        case .leaf:
+            return .green
+        case .gearshape:
+            return .orange
+        }
+    }
+    
     var body: some View {
         VStack {
             if #available(iOS 15.0, *) {
@@ -30,7 +49,7 @@ struct CustomTabBar: View {
                         Image(systemName: selectedTab == tab ? fillImage :
                                 tab.rawValue)
                             .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
-                            .foregroundColor(selectedTab == tab ? .red : .gray)
+                            .foregroundColor(selectedTab == tab ? tabColor : .gray)
                             .font(.system(size: 22))
                             .onTapGesture {
                                 withAnimation(.easeIn(duration:
