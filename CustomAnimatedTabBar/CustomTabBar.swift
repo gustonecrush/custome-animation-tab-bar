@@ -16,6 +16,11 @@ enum Tab: String, CaseIterable {
 }
 
 struct CustomTabBar: View {
+    @Binding var selectedTab: Tab
+    private var fillImage: String {
+        selectedTab.rawValue + ".fill"
+    }
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -23,6 +28,6 @@ struct CustomTabBar: View {
 
 struct CustomTabBar_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTabBar()
+        CustomTabBar(selectedTab: .constant(.house))
     }
 }
