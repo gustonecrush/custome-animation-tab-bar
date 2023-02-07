@@ -25,7 +25,12 @@ struct CustomTabBar: View {
         VStack {
             if #available(iOS 15.0, *) {
                 HStack {
-                    
+                    ForEach(Tab.allCases, id: \.rawValue) { tab in
+                        Spacer()
+                        Image(systemName: selectedTab == tab ? fillImage :
+                                tab.rawValue)
+                        Spacer()
+                    }
                 }
                 .frame(width: nil, height: 60)
                 .background(.thinMaterial)
