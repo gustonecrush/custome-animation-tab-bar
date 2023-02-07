@@ -22,7 +22,15 @@ struct CustomTabBar: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                
+            }
+            .frame(width: nil, height: 60)
+            .background(.thinMaterial)
+            .cornerRadius(10)
+            .padding()
+        }
     }
 }
 
