@@ -29,6 +29,12 @@ struct CustomTabBar: View {
                         Spacer()
                         Image(systemName: selectedTab == tab ? fillImage :
                                 tab.rawValue)
+                            .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
+                            .foregroundColor(selectedTab == tab ? .red : .gray)
+                            .font(.system(size: 22))
+                            .onTapGesture(.easeIn(duration: 0.1)) {
+                                selectedTab = tab
+                            }
                         Spacer()
                     }
                 }
