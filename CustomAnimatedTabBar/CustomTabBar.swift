@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+enum Tab: String, CaseIterable {
+    case house
+    case message
+    case person
+    case leaf
+    case gearshape
+}
+
 struct CustomTabBar: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
